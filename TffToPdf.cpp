@@ -15,7 +15,6 @@
 #define line_char_num 10 //每行的字符写入的数量
 unsigned int unicode = 0x0020;//Unicode编码值，从0x0020开始(空格） 输出的方框表示该Unicode码在该字体中没有对应的utf8编码
 
-
 void error_handler(HPDF_STATUS error_no, HPDF_STATUS detail_no, void* user_data)
 {
     printf("ERROR: error_no=%04X, detail_no=%u\n", (unsigned int)error_no, (unsigned int)detail_no);
